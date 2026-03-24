@@ -1,7 +1,6 @@
 import axios from "axios"
-
 export const API = axios.create({
-    baseURL: "https://task-manager-54qt.onrender.com/api"
+    baseURL: import.meta.env.VITE_API_URL
 })
 
 // Adding error handling interceptors
